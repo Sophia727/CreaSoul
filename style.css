@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+
+/* ***********generalities ************/
+*{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none;
+}
+
+body{
+    background-color: #f2f1f4;
+    font-family:"Open Sans", Arial;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #6a6d70;
+    margin: 0;
+
+}
+html{
+    font-size: 62%;
+}
+
+h1, h2{
+    font-family:"PT Sans Narrow";
+    text-transform: capitalize;
+    color: #60baac;
+    font-weight: normal;
+    margin: 0;
+    border-bottom:1px solid #30a894;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 2.4rem;
+
+}
+p{
+   margin: 15px 0;
+}
+
+span{
+    color: #7ac3c6;
+    padding: 4px;
+}
+a:hover {
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+/***********Header************ */
+header{
+    text-align: center;
+}
+header img{
+    width: 200px;
+}
+nav{
+    background-color: #30a894;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: "PT Sans Narrow";
+    font-size: 1.6em;
+    padding: 25px;
+    display: inline-block;
+    width: 33%;
+}
+
+header nav a:hover {
+	background-color: #38B5A0;
+}
+
+/* ************main************ */
+main{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.main_container{
+    display:flex;
+    flex-direction: row;
+}
+
+/* ci dessous je ne peux pas mettre 70% car la partie Aside s'afficherait en bas. it doesn't fit */
+#bienvenue{
+    width: 67%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding:0;
+    padding: 25px 25px 25px 0;
+}
+section img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* ++++aside+++ */
+aside{
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #b8dcb1;
+    padding: 20px;
+    color: #314c35;
+    margin: 0;
+}
+
+/* ++++++++++footer++++++ */
+
+.licence a {
+	color: #7ac3c6;
+	text-decoration: none;
+
+}
+
+.licence {
+    display: block;
+	padding: 25px;
+	text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: small;
+}
+
+.licence img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width:500px) {
+
+    
+    html{
+        font-size: 50%;
+        text-align: justify;
+        width: fit-content;
+    }
+
+    h1{
+        font-size: 1.95rem;
+        
+    }
+    h2{
+        font-size: 1.8rem;
+    
+    }
+    
+    #bienvenue{
+        /* margin: 25px;  */
+        /* display: block; */
+        width: 100%;
+        padding:0;
+        margin-top: 10px;
+    } 
+    .main_container{
+        display: block;
+    }
+    
+    aside{
+        display: block;
+        width: fit-content;
+    }
+
+    img{
+        width: 100%;
+    }
+    nav a{
+        display:list-item;
+        text-decoration: none;
+        list-style: none;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+/* VERSION TABLETTE */
+@media screen and (min-width: 768px) {
+	section, aside {
+		display: block;
+		padding: 25px;
+	}
+    #bienvenue img{
+        display: block;
+        width: 100%;
+    }
+	aside {
+		padding: 25px;
+		background-color: #B8DCB1;
+		color: #314C35;
+	}
+}
