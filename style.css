@@ -91,7 +91,7 @@ main{
 
 /* ci dessous je ne peux pas mettre 70% car la partie Aside s'afficherait en bas. it doesn't fit */
 #bienvenue{
-    width: 67%;
+    width: 65%;
     display: inline-block;
     vertical-align: top;
     margin: 0;
